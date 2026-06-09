@@ -1,0 +1,189 @@
+:root {
+  --bg-main: #0e1122;
+  --bg-card: #2e0c38;
+  --accent: #c71b52;
+  --accent-secondary: #6da4a1;
+  --text-light: #f8f9fa;
+}
+
+/* Estilos generales */
+body {
+  background-color: var(--bg-main);
+  color: var(--text-light);
+  font-family: "Poppins", sans-serif;
+  padding-top: 80px; /* Espacio para que la navbar fija no tape el contenido */
+}
+/* navbar */
+.custom-navbar .nav-link {
+  color: rgba(255, 255, 255, 0.75) !important;
+  font-weight: 500;
+}
+.custom-navbar .nav-link.active,
+.custom-navbar .nav-link:hover {
+  color: var(--text-light) !important;
+}
+.text-accent {
+  color: var(--accent);
+}
+.btn-accent {
+  background-color: var(--accent);
+  color: var(--text-light);
+  border: none;
+  border-radius: 20px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+.btn-accent:hover {
+  background-color: #a01340;
+  color: var(--text-light);
+  transform: translateY(-2px);
+}
+.transition-all {
+  transition: all 0.4s ease-in-out;
+}
+.navbar-scrolled {
+  background-color: rgba(26, 12, 36, 0.85) !important;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  padding-top: 12px !important;
+  padding-bottom: 12px !important;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+/* boton contactame */
+.btn-outline-accent {
+  border: 2px solid var(--accent);
+  color: var(--text-light);
+  transition: all 0.3s ease;
+}
+.btn-outline-accent:hover {
+  background-color: var(--accent);
+  color: var(--text-light);
+}
+/* Control del tamaño del avatar */
+.hero-avatar {
+  max-height: 450px;
+  object-fit: contain;
+}
+/*iconos redes */
+.icon-link {
+  transition:
+    color 0.3s ease,
+    transform 0.3s ease;
+  display: inline-block;
+}
+.icon-link:hover {
+  color: var(--accent) !important;
+  transform: translateY(-3px);
+}
+.section-about {
+  background-color: var(--bg-main);
+}
+.about-card {
+  background-color: var(--bg-card);
+  border: 1px solid rgba(255, 255, 255, 0.03);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+.tracking-wider {
+  letter-spacing: 0.15em;
+}
+.text-white-70 {
+  color: rgba(255, 255, 255, 0.7);
+}
+/*iconos*/
+.tech-icon-only {
+  width: 75px !important;
+  height: 75px !important;
+  background-color: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 50% !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  margin: 0 auto;
+  transition:
+    transform 0.25s ease,
+    border-color 0.25s ease,
+    background-color 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.tech-icon-only i {
+  font-size: 2.3rem !important;
+  display: inline-block;
+  line-height: 1;
+}
+.tech-icon-only span {
+  font-size: 1.7rem !important;
+  font-weight: 800 !important;
+  letter-spacing: -1px;
+}
+.tech-icon-only:hover {
+  transform: scale(1.15);
+  border-color: var(--accent) !important;
+  background-color: rgba(199, 27, 82, 0.12) !important;
+  box-shadow: 0 0 20px rgba(199, 27, 82, 0.3);
+  cursor: pointer;
+}
+/*habilidades*/
+.skill-card {
+  background-color: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  transition:
+    transform 0.3s ease,
+    border-color 0.3s ease;
+}
+
+.skill-card:hover {
+  transform: translateY(-5px);
+  border-color: var(--accent);
+}
+
+.custom-progress {
+  background-color: rgba(255, 255, 255, 0.1) !important;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.bg-accent {
+  background-color: var(--accent) !important;
+}
+
+.bg-secondary-custom {
+  background-color: var(--accent-secondary) !important;
+}
+/* --- proyectos --- */
+.project-card {
+  background-color: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  display: flex;
+  flex-direction: column;
+  transition:
+    transform 0.3s ease,
+    border-color 0.3s ease,
+    box-shadow 0.3s ease;
+}
+/* Efecto hover interactivo */
+.project-card:hover {
+  transform: translateY(-5px);
+  border-color: var(--accent);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+/* Contenedor y tamaño de la imagen */
+.project-img-container {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.project-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+.bg-accent-badge {
+  background-color: #2e0c38 !important;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  font-weight: 500;
+}
